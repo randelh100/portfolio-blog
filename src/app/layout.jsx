@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-import { Rubik } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 
-const rubik = Rubik({ subsets: ["cyrillic"] });
+const ubuntu = Ubuntu({ subsets: ["greek"], weight: '400'});
 
 export const metadata = {
     title: "Create Next App",
@@ -15,7 +15,7 @@ export default function RootLayout({
 ) {
     return (
         <html lang="en">
-            <body className={rubik.className}>
+            <body className={ubuntu.className}>
                 <Navbar />
                 {children}
             </body>
